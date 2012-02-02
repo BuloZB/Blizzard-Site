@@ -2,7 +2,8 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8">
-	<title>Blizzard Site</title>
+	<title><?php echo $site_title; ?></title>
+	<link rel="stylesheet" href="<?php echo $css_path; ?>master.css" />
 </head>
 <body>
 <div id="container">

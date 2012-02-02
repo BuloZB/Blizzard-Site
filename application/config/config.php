@@ -24,6 +24,20 @@
  * @since		Version 1.0
  * @filesource
  */
+/*
+|--------------------------------------------------------------------------
+| Site Title
+|--------------------------------------------------------------------------
+|
+| Title of the community site. Remember this $config is used for 
+| other things like pagination.
+|
+| Example:
+| $config['site_title'] . '-' . $place
+|
+*/
+
+$config['site_title'] = 'Blizzard Site';
 
 /*
 |--------------------------------------------------------------------------
@@ -39,7 +53,7 @@
 | path to your installation.
 |
 */
-$config['base_url']	= '';
+$config['base_url']	= 'http://localhost/';
 
 /*
 |--------------------------------------------------------------------------
