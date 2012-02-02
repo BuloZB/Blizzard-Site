@@ -1,70 +1,70 @@
 @charset "utf-8";
-.newsheader .latestnews { background: url(../../_images/lang/es-mx/frontpage/latestnews.png);}
-.btn-agree {background-image:url(../../_images/lang/es-mx/btn-agree.jpg);}
-.btn-disagree {background-image:url(../../_images/lang/es-mx/btn-disagree.jpg);}
-a.dl_btn:link, a.dl_btn:active, a.dl_btn:visited  {background-image:url(../../_images/blizzcast/es-MX/download_button.gif);}
+.newsheader .latestnews { background: url(../../images/lang/es/frontpage/latestnews.png);}
+.btn-agree {background-image:url(../../images/lang/es/btn-agree.jpg);}
+.btn-disagree {background-image:url(../../images/lang/es/btn-disagree.jpg);}
+a.dl_btn:link, a.dl_btn:active, a.dl_btn:visited  {background-image:url(../../_images/blizzcast/es/download_button.gif);}
 
 /* Menu navigation */
-	.navigation .bar a {background: url(../../_images/lang/es-mx/nav-bar.gif);}
+	.navigation .bar a {background: url(../../images/lang/es/nav-bar.gif);}
 
 /* Landing pages styles */
 
 
-	.company-landing .links .standardbox .middlebar .backgroundfour a.about {width:217px; height: 186px; background: url(../../_images/lang/es-mx/company-about.jpg); display: block; }
-	.company-landing .links .standardbox .middlebar .backgroundfour a.careers {width:217px; height: 186px; background: url(../../_images/lang/es-mx/company-careers.jpg); display: block; }
-	.company-landing .links .standardbox .middlebar .backgroundfour a.events {width:217px; height: 186px; background: url(../../_images/lang/es-mx/company-events.jpg); display: block; }
-	.company-landing .links .standardbox .middlebar .backgroundfour a.press {width:217px; height: 186px; background: url(../../_images/lang/es-mx/company-press.jpg); display: block; }
+	.company-landing .links .standardbox .middlebar .backgroundfour a.about {width:217px; height: 186px; background: url(../../images/lang/es/company-about.jpg); display: block; }
+	.company-landing .links .standardbox .middlebar .backgroundfour a.careers {width:217px; height: 186px; background: url(../../images/lang/es/company-careers.jpg); display: block; }
+	.company-landing .links .standardbox .middlebar .backgroundfour a.events {width:217px; height: 186px; background: url(../../images/lang/es/company-events.jpg); display: block; }
+	.company-landing .links .standardbox .middlebar .backgroundfour a.press {width:217px; height: 186px; background: url(../../images/lang/es/company-press.jpg); display: block; }
 
-	.company-landing .buttons a.contactus { background-image: url(../../_images/lang/es-mx/btn-contactus.gif); }
-	.community-landing .wow .logoarea { width: 100%; background: url(../../_images/lang/es-mx/community-logo-wow.jpg); background-position: top center; background-repeat: no-repeat;}
-	.community-landing .d3 .logoarea { width: 100%; background: url(../../_images/lang/es-mx/community-logo-d3.jpg); background-position: top center; background-repeat: no-repeat;}
-	.community-landing .sc2 .logoarea { margin: 0; width: 100%; background: url(../../_images/lang/es-mx/community-logo-sc2.jpg); background-position: top center; background-repeat: no-repeat;}
-	.community-landing .buttons a.communitysites {background-image: url(../../_images/lang/es-mx/btn-communitysite.gif);}
-	.community-landing .buttons a.forums { background-image: url(../../_images/lang/es-mx/btn-forums.gif); }
-	.community-landing .links .standardbox .middlebar .backgroundthree a.contests {width:300px; height: 135px; background: url(../../_images/lang/es-mx/communitycard-contests.jpg); display: block; }
-	.community-landing .links .standardbox .middlebar .backgroundthree a.insider {width:300px; height: 135px; background: url(../../_images/lang/es-mx/communitycard-insider.jpg); display: block; }
-	.community-landing .links .standardbox .middlebar .backgroundthree a.blizzcast {width:300px; height: 135px; background: url(../../_images/lang/es-mx/communitycard-blizzcast.jpg); display: block; }
-	.community-landing .links .standardbox .middlebar .backgroundthree a.fanart {width:300px; height: 135px; background: url(../../_images/lang/es-mx/communitycard-fanart.jpg); display: block; }
-	.community-landing .links .standardbox .middlebar .backgroundthree a.conceptart {width:300px; height: 135px; background: url(../../_images/lang/es-mx/communitycard-conceptart.jpg); display: block; }
-	.community-landing .links .standardbox .middlebar .backgroundthree a.events {width:300px; height: 135px; background: url(../../_images/lang/es-mx/communitycard-events.jpg); display: block; }
-	.community-landing .links .standardbox .middlebar .backgroundthree a.youtube {width:300px; height: 135px; background: url(../../_images/lang/es-mx/communitycard-youtube.jpg); display: block; }
+	.company-landing .buttons a.contactus { background-image: url(../../images/lang/es/btn-contactus.gif); }
+	.community-landing .wow .logoarea { width: 100%; background: url(../../images/lang/es/community-logo-wow.jpg); background-position: top center; background-repeat: no-repeat;}
+	.community-landing .d3 .logoarea { width: 100%; background: url(../../images/lang/es/community-logo-d3.jpg); background-position: top center; background-repeat: no-repeat;}
+	.community-landing .sc2 .logoarea { margin: 0; width: 100%; background: url(../../images/lang/es/community-logo-sc2.jpg); background-position: top center; background-repeat: no-repeat;}
+	.community-landing .buttons a.communitysites {background-image: url(../../images/lang/es/btn-communitysite.gif);}
+	.community-landing .buttons a.forums { background-image: url(../../images/lang/es/btn-forums.gif); }
+	.community-landing .links .standardbox .middlebar .backgroundthree a.contests {width:300px; height: 135px; background: url(../../images/lang/es/communitycard-contests.jpg); display: block; }
+	.community-landing .links .standardbox .middlebar .backgroundthree a.insider {width:300px; height: 135px; background: url(../../images/lang/es/communitycard-insider.jpg); display: block; }
+	.community-landing .links .standardbox .middlebar .backgroundthree a.blizzcast {width:300px; height: 135px; background: url(../../images/lang/es/communitycard-blizzcast.jpg); display: block; }
+	.community-landing .links .standardbox .middlebar .backgroundthree a.fanart {width:300px; height: 135px; background: url(../../images/lang/es/communitycard-fanart.jpg); display: block; }
+	.community-landing .links .standardbox .middlebar .backgroundthree a.conceptart {width:300px; height: 135px; background: url(../../images/lang/es/communitycard-conceptart.jpg); display: block; }
+	.community-landing .links .standardbox .middlebar .backgroundthree a.events {width:300px; height: 135px; background: url(../../images/lang/es/communitycard-events.jpg); display: block; }
+	.community-landing .links .standardbox .middlebar .backgroundthree a.youtube {width:300px; height: 135px; background: url(../../images/lang/es/communitycard-youtube.jpg); display: block; }
 	.community-landing .communitytext {}
 
-	.games-landing .allgames .standardbox .middlebar .backgroundthree a.sc1 {background: url(../../_images/lang/es-mx/gamecard-games-sc1.jpg);}
-	.games-landing .allgames .standardbox .middlebar .backgroundthree a.sc2 {background: url(../../_images/lang/es-mx/gamecard-games-sc2.jpg);}
-	.games-landing .allgames .standardbox .middlebar .backgroundthree a.cataclysm {background: url(../../_images/lang/es-mx/gamecard-games-cataclysm.jpg);}
-	.games-landing .allgames .standardbox .middlebar .backgroundthree a.war3 {background: url(../../_images/lang/es-mx/gamecard-games-war3.jpg); }
-	.games-landing .allgames .standardbox .middlebar .backgroundthree a.wow {background: url(../../_images/lang/es-mx/gamecard-games-wow.jpg);}
-	.games-landing .allgames .standardbox .middlebar .backgroundthree a.bc {background: url(../../_images/lang/es-mx/gamecard-games-bc.jpg);}
-	.games-landing .allgames .standardbox .middlebar .backgroundthree a.wrath {background: url(../../_images/lang/es-mx/gamecard-games-wrath.jpg);}
-	.games-landing .allgames .standardbox .middlebar .backgroundthree a.d2 {background: url(../../_images/lang/es-mx/gamecard-games-d2.jpg);}
-	.games-landing .allgames .standardbox .middlebar .backgroundthree a.legacy {background: url(../../_images/lang/es-mx/gamecard-games-legacy.jpg);}
+	.games-landing .allgames .standardbox .middlebar .backgroundthree a.sc1 {background: url(../../images/lang/es/gamecard-games-sc1.jpg);}
+	.games-landing .allgames .standardbox .middlebar .backgroundthree a.sc2 {background: url(../../images/lang/es/gamecard-games-sc2.jpg);}
+	.games-landing .allgames .standardbox .middlebar .backgroundthree a.cataclysm {background: url(../../images/lang/es/gamecard-games-cataclysm.jpg);}
+	.games-landing .allgames .standardbox .middlebar .backgroundthree a.war3 {background: url(../../images/lang/es/gamecard-games-war3.jpg); }
+	.games-landing .allgames .standardbox .middlebar .backgroundthree a.wow {background: url(../../images/lang/es/gamecard-games-wow.jpg);}
+	.games-landing .allgames .standardbox .middlebar .backgroundthree a.bc {background: url(../../images/lang/es/gamecard-games-bc.jpg);}
+	.games-landing .allgames .standardbox .middlebar .backgroundthree a.wrath {background: url(../../images/lang/es/gamecard-games-wrath.jpg);}
+	.games-landing .allgames .standardbox .middlebar .backgroundthree a.d2 {background: url(../../images/lang/es/gamecard-games-d2.jpg);}
+	.games-landing .allgames .standardbox .middlebar .backgroundthree a.legacy {background: url(../../images/lang/es/gamecard-games-legacy.jpg);}
 
-	.games-landing .underdev .standardbox .middlebar a.mists {background: url(../../_images/lang/es-mx/gamecard-games-mists.jpg);}
-	.games-landing .underdev .standardbox .middlebar a.sc2-hots {background: url(../../_images/lang/es-mx/gamecard-games-hots.jpg);}
-	.games-landing .underdev .standardbox .middlebar a.d3 {background: url(../../_images/lang/es-mx/gamecard-games-d3.jpg); }	
+	.games-landing .underdev .standardbox .middlebar a.mists {background: url(../../images/lang/es/gamecard-games-mists.jpg);}
+	.games-landing .underdev .standardbox .middlebar a.sc2-hots {background: url(../../images/lang/es/gamecard-games-hots.jpg);}
+	.games-landing .underdev .standardbox .middlebar a.d3 {background: url(../../images/lang/es/gamecard-games-d3.jpg); }	
 	
-	.games-landing .explore .standardbox .middlebar .backgroundthree a.trailers {background: url(../../_images/lang/es-mx/gamecard-explore-trailers.jpg); }
-	.games-landing .explore .standardbox .middlebar .backgroundthree a.legacy {background: url(../../_images/lang/es-mx/gamecard-explore-legacy.jpg); }
-	.games-landing .explore .standardbox .middlebar .backgroundthree a.music {background: url(../../_images/lang/es-mx/gamecard-explore-music.jpg);}
-	.games-landing .explore .standardbox .middlebar .backgroundthree a.careers {background: url(../../_images/lang/es-mx/gamecard-explore-careers.jpg);}
+	.games-landing .explore .standardbox .middlebar .backgroundthree a.trailers {background: url(../../images/lang/es/gamecard-explore-trailers.jpg); }
+	.games-landing .explore .standardbox .middlebar .backgroundthree a.legacy {background: url(../../images/lang/es/gamecard-explore-legacy.jpg); }
+	.games-landing .explore .standardbox .middlebar .backgroundthree a.music {background: url(../../images/lang/es/gamecard-explore-music.jpg);}
+	.games-landing .explore .standardbox .middlebar .backgroundthree a.careers {background: url(../../images/lang/es/gamecard-explore-careers.jpg);}
 	
-	a.returntogames {width:234px; height:53px; background:url(../../_images/lang/es-mx/btn-returntogames.png) 0 0 no-repeat; display:block; margin:0 auto;}
+	a.returntogames {width:234px; height:53px; background:url(../../images/lang/es/btn-returntogames.png) 0 0 no-repeat; display:block; margin:0 auto;}
 
 
-	.page-about ul a.profile {background-image:url(../../_images/lang/es-mx/companycard-profile.jpg);}
-	.page-about ul a.mission {background-image:url(../../_images/lang/es-mx/companycard-mission.jpg);}
-	.page-about ul a.awards {background-image:url(../../_images/lang/es-mx/companycard-awards.jpg);}
-	.page-about ul a.partners {background-image:url(../../_images/lang/es-mx/companycard-partners.jpg);}
-	.page-about ul a.faq {background-image:url(../../_images/lang/es-mx/companycard-faq.jpg);}
-	.page-about ul a.contact {background-image:url(../../_images/lang/es-mx/companycard-contact.jpg);}
-	.page-about ul a.b20 {background-image:url(../../_images/lang/es-mx/companycard-b20.jpg);}
+	.page-about ul a.profile {background-image:url(../../images/lang/es/companycard-profile.jpg);}
+	.page-about ul a.mission {background-image:url(../../images/lang/es/companycard-mission.jpg);}
+	.page-about ul a.awards {background-image:url(../../images/lang/es/companycard-awards.jpg);}
+	.page-about ul a.partners {background-image:url(../../images/lang/es/companycard-partners.jpg);}
+	.page-about ul a.faq {background-image:url(../../images/lang/es/companycard-faq.jpg);}
+	.page-about ul a.contact {background-image:url(../../images/lang/es/companycard-contact.jpg);}
+	.page-about ul a.b20 {background-image:url(../../images/lang/es/companycard-b20.jpg);}
 
-	.page-press ul a.profile {background-image:url(../../_images/lang/es-mx/presscard-pressreleases.jpg);}
-	.page-press ul a.mission {background-image:url(../../_images/lang/es-mx/presscard-presskits.jpg);}
+	.page-press ul a.profile {background-image:url(../../images/lang/es/presscard-pressreleases.jpg);}
+	.page-press ul a.mission {background-image:url(../../images/lang/es/presscard-presskits.jpg);}
 
-	.page-careers .jobs-only div a.jobsbtn {background:url(../../_images/lang/es-mx/button-searchjobs.png) 0 0 no-repeat;}
-	.page-careers .jobs-only div a.internsbtn {background:url(../../_images/lang/es-mx/button-searchinternships.png) 0 0 no-repeat;}
+	.page-careers .jobs-only div a.jobsbtn {background:url(../../images/lang/es/button-searchjobs.png) 0 0 no-repeat;}
+	.page-careers .jobs-only div a.internsbtn {background:url(../../images/lang/es/button-searchinternships.png) 0 0 no-repeat;}
 
 .page-mission h3 {width:800px;}
 .page-mission .lead {width:680px;}
@@ -91,14 +91,14 @@ ul li.cv-globally div p {margin-top:40px;}
 .sc2 #purchase-buttons-tw {display: none;}
 
 /* blizzard 20th anniversary */
-.b20-landing .b20-landing-bg { background-image: url(../../_images/lang/es-mx/b20/landing-bg.jpg) }
-.b20-landing .b20-intro { background-image:url(../../_images/lang/es-mx/b20/landing-title.jpg) }
-.b20-landing .thumb-links a { background-image:url(../../_images/lang/es-mx/b20/thumbs.jpg) }
-.b20-videos .b20-video-bg { background-image: url(../../_images/lang/es-mx/b20/video-bg.jpg) }
-.b20-photo-gallery .b20-photo-gallery-bg { background-image: url(../../_images/lang/es-mx/b20/photo-gallery-bg.jpg) }
-.b20-photo-gallery .b20-photo-gallery-bg.sword-shield { background-image: url(../../_images/lang/es-mx/b20/subpage-bg.jpg) }
-.b20-contest .b20-contest-bg { background-image: url(../../_images/lang/es-mx/b20/subpage-bg.jpg) }
+.b20-landing .b20-landing-bg { background-image: url(../../images/lang/es/b20/landing-bg.jpg) }
+.b20-landing .b20-intro { background-image:url(../../images/lang/es/b20/landing-title.jpg) }
+.b20-landing .thumb-links a { background-image:url(../../images/lang/es/b20/thumbs.jpg) }
+.b20-videos .b20-video-bg { background-image: url(../../images/lang/es/b20/video-bg.jpg) }
+.b20-photo-gallery .b20-photo-gallery-bg { background-image: url(../../images/lang/es/b20/photo-gallery-bg.jpg) }
+.b20-photo-gallery .b20-photo-gallery-bg.sword-shield { background-image: url(../../images/lang/es/b20/subpage-bg.jpg) }
+.b20-contest .b20-contest-bg { background-image: url(../../images/lang/es/b20/subpage-bg.jpg) }
 .b20-photo-gallery .second-paragraph { padding:80px 50px 0; }
 
 /* Motion Overdrive */
-.overdrive-title { background-image:url(../../_images/games/motion-overdrive/header-title-es-mx.png); }
+.overdrive-title { background-image:url(../../_images/games/motion-overdrive/header-title-es.png); }

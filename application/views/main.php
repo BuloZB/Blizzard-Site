@@ -4,8 +4,10 @@
 	<meta charset="utf-8">
 	<title><?php echo $site_title; ?></title>
 	<link rel="stylesheet" href="<?php echo $css_path; ?>master.css" />
+	<link rel="stylesheet" href="<?php echo $css_path; ?>es/local.css" />
 </head>
-<body>
+<body class="frontpage">
+
 <div id="container">
 	<h1>&iexcl;Bienvenidos a lo que ser&aacute; la pr&oacute;xima Blizzard Site!</h1>
 
