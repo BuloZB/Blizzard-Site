@@ -6,11 +6,12 @@
 ****************************************************
 | Asfo
 | -------------------------------------------------
-| Subir el estilo primario
-| Limpiar el código primario y fuente que se tomará
+| -Subir el estilo primario
+| -Limpiar el código primario y fuente que se tomará
 | de la página http://us.blizzard.com/es-mx/
-| Implementar la configuración "main.php" que
+| -Implementar la configuración "main.php" que
 | tendrá las configuraciones de la web GLOBAL
+| -Minimizar el CSS
 ****************************************************
 | Drakantas
 ****************************************************
