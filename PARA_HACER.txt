@@ -1,21 +1,27 @@
 /* ------------ Archivo 'Para Hacer' ------------- */
 /***************************************************
-| Todo lo listado aquí es solamente una referencia
-| de lo que la página requiere. Se separa por 
+| Todo lo listado aquï¿½ es solamente una referencia
+| de lo que la pï¿½gina requiere. Se separa por 
 | usuario y sus "PARA HACER" especificados.
 ****************************************************
 | Asfo
 | -------------------------------------------------
 | -Subir el estilo primario
-| -Limpiar el código primario y fuente que se tomará
-| de la página http://us.blizzard.com/es-mx/
-| -Implementar la configuración "main.php" que
-| tendrá las configuraciones de la web GLOBAL
+| -Limpiar el cï¿½digo primario y fuente que se tomarï¿½
+| de la pï¿½gina http://us.blizzard.com/es-mx/
+| -Implementar la configuraciï¿½n "main.php" que
+| tendrï¿½ las configuraciones de la web GLOBAL
 | -Minimizar el CSS
+| -Terminar el sistema de instalaciÃ³n y descomentar
+|  las lÃ­neas iniciales, recordar que el archivo
+|  para bloqueo de instalaciÃ³n se llama "locked"
 ****************************************************
 | Drakantas
 ****************************************************
 | Otros...
+| -------------------------------------------------
+| -Analizar que no haya errores en la implementaciÃ³n
+|  del diseÃ±o.
 ****************************************************
 | Copyright (C) 2012 FrozenTeam
 ****************************************************/
