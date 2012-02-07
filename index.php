@@ -238,7 +238,20 @@ if (defined('ENVIRONMENT'))
 
 		define ('VIEWPATH', APPPATH.'views/' );
 	}
-
+/*
+ * --------------------------------------------------------------------
+ * Chequeo de instalación...
+ * --------------------------------------------------------------------
+ *
+ * Estarán comentadas estas líneas hasta que se compruebe bajo un
+ * funcionamiento real en un futuro la instalación.
+ */
+ /*
+ if(!DEFINED('DS'))
+    DEFINE('DS', DIRECTORY_SEPARATOR);
+ if(!file_exists("system".DS."locked"))
+    echo '<meta http-equiv="refresh" content="0; url=_install">';
+*/
 /*
  * --------------------------------------------------------------------
  * LOAD THE BOOTSTRAP FILE
