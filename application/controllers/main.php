@@ -1,46 +1,35 @@
-<?php  if ( ! defined('BASEPATH')) exit('No direct script access allowed');
-/**
- * CodeIgniter
- *
- * An open source application development framework for PHP 5.1.6 or newer
- *
- * NOTICE OF LICENSE
- * 
- * Licensed under the Academic Free License version 3.0
- * 
- * This source file is subject to the Academic Free License (AFL 3.0) that is
- * bundled with this package in the files license_afl.txt / license_afl.rst.
- * It is also available through the world wide web at this URL:
- * http://opensource.org/licenses/AFL-3.0
- * If you did not receive a copy of the license and are unable to obtain it
- * through the world wide web, please send an email to
- * licensing@ellislab.com so we can send you a copy immediately.
- *
- * @package		CodeIgniter
- * @author		EllisLab Dev Team
- * @copyright	Copyright (c) 2008 - 2012, EllisLab, Inc. (http://ellislab.com/)
- * @license		http://opensource.org/licenses/AFL-3.0 Academic Free License (AFL 3.0)
- * @link		http://codeigniter.com
- * @since		Version 1.0
- * @filesource
- */
+<?php  
+if (!DEFINED('BASEPATH')) 
+	exit('<h1>Error 403</h1><p>Acceso prohibido a este archivo</p>'); //Todo esto debería tener un estilo igual al de Blizzard [Soon]
 
 class Main extends CI_Controller {
 
+	//URL del sitio (configuración)
 	public $site_url;
-	public $css_path;
+	//Rutas a carpetas de contenido estático
+	public $css_path; //css
+	public $js_path; //js
+	public $images_path; //images
+	public $flash_path; //flash
 	
 	public function __construct()
 	{
 		parent::__construct();
 		$this->site_url = $this->config->item('base_url');
 		$this->css_path = $this->site_url."static/css/";
+		$this->js_path = $this->site_url."static/js/";
+		$this->images_path = $this->site_url."static/images/";
+		//No debería ir al contenido estático pero por referencias lo hará por ahora.
+		$this->flash_path = $this->site_url."static/flash/";
 	}
 	
 	public function index()
 	{
 		$info['base_url'] = $this->site_url;
 		$info['css_path'] = $this->css_path;
+		$info['js_path'] = $this->js_path;
+		$info['images_path'] = $this->images_path;
+		$info['flash_path'] = $this->flash_path;
 		$info['site_title'] = $this->config->item('site_title');
 		$this->load->view('main', $info);
 	}
