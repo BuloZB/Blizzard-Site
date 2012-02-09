@@ -103,5 +103,180 @@
 				</div>
 				</form>
 			</div>
-</body>
-</html>
+			<div class="centercontainer">
+				<div class="newscontainer">
+					<div class="newsheader">
+						<div class="latestnews"></div>
+                        <div class="facebookicon"><a href="#" title="Blizzard en Facebook"></a></div>
+						<div class="rssicon"><a href="#" title="Noticias en RSS"></a></div>
+                        <div class="viewallnews"><a href="#">Ver todas las noticias</a></div>
+                    </div>
+					<div id="newsbox">
+						<dl class="sliderbox" id="slider2">                   
+        <dt><span class="date">null</span><span class="title">null</span></dt>
+        <dd>
+            	<div class="thumb"><a  href="#"><img src="http://us.media2.battle.net/cms/blog_thumbnail/257619BPANMW1328574444716.jpg"/></a></div>
+            <div class="text">
+			null
+            <div>
+            <a class="readmoreline" href="#">
+            	<span class="arrow"></span>leer m&aacute;s
+            </a>
+            </div>
+            </div>
+        </dd>
+        <dt><span class="date">null</span><span class="title">null</span></dt>
+        <dd>
+            	<div class="thumb"><a  href="#" ><img src="http://us.media1.battle.net/cms/blog_thumbnail/5REYLSZP9MJT1327507020394.jpg"/></a></div>
+            <div class="text">
+            null
+            <div>
+            <a class="readmoreline" href="#">
+            	<span class="arrow"></span>leer m&aacute;s
+            </a>
+            </div>
+            </div>
+        </dd>
+        <dt><span class="date">null</span><span class="title">null</span></dt>
+        <dd>
+            	<div class="thumb"><a  href="#"><img src="http://us.media4.battle.net/cms/blog_thumbnail/QM1ETPOSU7CF1321996122363.jpg"/></a></div>
+            <div class="text">
+            null
+            <div>
+            <a class="readmoreline" href="#">
+            	<span class="arrow"></span>leer m&aacute;s
+            </a>
+            </div>
+            </div>
+        </dd>
+        <dt><span class="date">null</span><span class="title">null</span></dt>
+        <dd>
+            	<div class="thumb"><a  href="#"><img src="http://us.media1.battle.net/cms/blog_thumbnail/7GLU3GVF1ZGM1319216366055.jpg"/></a></div>
+            <div class="text">
+            <p><strong>null</strong>
+            <div>
+            <a class="readmoreline" href="#">
+            	<span class="arrow"></span>leer m&aacute;s
+            </a>
+            </div>
+            </div>
+        </dd>
+						</dl>
+					</div> 
+				</div> 
+      <a href="#" class="spotlight1" style="background-image: url(/images/frontpage/es-mx/spotlight-sc2starter.jpg);"></a>
+      <a href="#" class="spotlight2" style="background-image: url(/_images/frontpage/es-mx/spotlight-wowtrial-alliance.jpg);"></a>
+			</div>                 
+		</div>       
+	</div>
+		
+	<script type="text/javascript">
+		var flashvars = {};
+		var params = {};
+		params.bgcolor = "#010d16";
+		params.quality = "autohigh";
+		params.wmode = "transparent";
+		params.base = "/_flash/";
+		params.allowScriptAccess = "always";
+		flashvars.importxmlpath = "<?php echo $content_path; ?>es/frontpage.xml";
+		flashvars.mediahostpath = "http://us.media.blizzard.com/blizzard/_flash/";
+		var attributes = {};
+		swfobject.embedSWF("http://us.media.blizzard.com/blizzard/_flash/header.swf", "flashHeader", "100%", "570", "9.0.0", false, flashvars, params, attributes, bannerEmbedCallback);
+        var slider2=new accordion.slider("slider2");
+        slider2.init("slider2",0,"open");
+		var bannerList = [];
+		var bannerButtonList = [];
+		var buttonRow = document.getElementById('button-row');
+		var buttonSliderTimeout = 0;
+		var bannerSliderTimeout = 0;
+		var activeIndex = 0;
+			bannerList[0] = document.getElementById('bannerDiv0');
+			bannerButtonList[0] = document.getElementById('bannerButton0');
+			bannerList[1] = document.getElementById('bannerDiv1');
+			bannerButtonList[1] = document.getElementById('bannerButton1');
+			bannerList[2] = document.getElementById('bannerDiv2');
+			bannerButtonList[2] = document.getElementById('bannerButton2');
+			bannerList[3] = document.getElementById('bannerDiv3');
+			bannerButtonList[3] = document.getElementById('bannerButton3');
+			bannerList[4] = document.getElementById('bannerDiv4');
+			bannerButtonList[4] = document.getElementById('bannerButton4');
+			
+		function activateBanner(elementIndex) {
+			clearTimeout(bannerSliderTimeout)
+			bannerSliderTimeout = setTimeout(function() {
+				pageBanners("next")
+			}, 5000)
+
+			if (elementIndex == activeIndex) {
+				return;
+			}
+
+			for (var x = 0; x < bannerButtonList.length; x++) {
+				if (bannerList[x].style.display != "none") {
+					$j(bannerList[x]).fadeOut();
+				}
+				bannerButtonList[x].className = "static-banner-button";
+			}
+
+			bannerButtonList[elementIndex].className = "static-banner-button active-banner-button";
+
+			$j(bannerList[elementIndex]).fadeIn();
+
+			var currentMargin = buttonRow.style.marginLeft;
+			currentMargin = currentMargin.substring(0, currentMargin.indexOf("px"))
+
+			if (elementIndex >= 3) {
+				buttonRow.style.marginLeft = "-116px";
+				//slideButtonRow(currentMargin * 1, -4, -116)
+			} else if (elementIndex <= 1) {
+				buttonRow.style.marginLeft = "0";
+				//slideButtonRow(currentMargin * 1, 4, 0)
+			}
+
+			activeIndex = elementIndex;
+		}
+
+		function slideButtonRow(currentMargin, slideAmount, targetMargin) {
+			clearTimeout(buttonSliderTimeout)
+
+			var newMargin = (currentMargin + slideAmount);
+
+			if ((slideAmount > 0 && newMargin <= targetMargin) || (slideAmount < 0 && newMargin >= targetMargin)) {
+
+				buttonRow.style.marginLeft = newMargin + "px";
+
+				buttonSliderTimeout = setTimeout(function() {
+										slideButtonRow(newMargin, slideAmount, targetMargin)
+									}, 1)
+			}
+		}
+
+		function pageBanners(direction) {
+			var newIndex = 0;
+
+			if (direction == "next") {
+				if ((activeIndex + 1) >= bannerList.length) {
+					newIndex = 0;
+				} else {
+					newIndex = activeIndex + 1;
+				}
+			} else if (direction == "prev") {
+				if ((activeIndex - 1) < 0) {
+					newIndex = bannerList.length - 1;
+				} else {
+					newIndex = activeIndex - 1;
+				}
+			}
+
+			activateBanner(newIndex);
+		}
+		function bannerEmbedCallback(e) {
+			if (!e.success) {
+				var flashBannerFallback = document.getElementById("flashBannerFallback");
+				flashBannerFallback.style.display = "";
+				bannerSliderTimeout = setTimeout(function() {
+											pageBanners("next")
+										}, 5000)
+			}
+		}
+	</script>

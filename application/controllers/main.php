@@ -34,7 +34,9 @@ class Main extends CI_Controller {
 		$info['flash_path'] = $this->flash_path;
 		$info['content_path'] = $this->content_path;
 		$info['site_title'] = $this->config->item('site_title');
+		//Parte del sistema de "vistas" para englobalizar archivos
 		$this->load->view('main', $info);
+		$this->load->view('global/footer', $info);
 	}
 }
 
