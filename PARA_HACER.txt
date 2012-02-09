@@ -1,20 +1,23 @@
 /* ------------ Archivo 'Para Hacer' ------------- */
 /***************************************************
-| Todo lo listado aqu� es solamente una referencia
-| de lo que la p�gina requiere. Se separa por 
+| Todo lo listado aquí es solamente una referencia
+| de lo que la página requiere. Se separa por 
 | usuario y sus "PARA HACER" especificados.
 ****************************************************
 | Asfo
 | -------------------------------------------------
 | -Subir el estilo primario
-| -Limpiar el c�digo primario y fuente que se tomar�
-| de la p�gina http://us.blizzard.com/es-mx/
-| -Implementar la configuraci�n "main.php" que
-| tendr� las configuraciones de la web GLOBAL
+| -Limpiar el código primario y fuente que se tomará
+| de la página http://us.blizzard.com/es-mx/
+| -Implementar la configuración "main.php" que
+| tendrá las configuraciones de la web GLOBAL
 | -Minimizar el CSS
 | -Terminar el sistema de instalación y descomentar
 |  las líneas iniciales, recordar que el archivo
 |  para bloqueo de instalación se llama "locked"
+| -Crear librería para rutas y obtenciones por
+|  archivos
+| -Minimizar cualquier JS disponible, slider.js listo
 ****************************************************
 | Drakantas
 ****************************************************
