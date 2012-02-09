@@ -6,6 +6,7 @@
 	<link rel="stylesheet" href="<?php echo $css_path; ?>master.css" />
 	<link rel="stylesheet" href="<?php echo $css_path; ?>es/local.css" />
 	<script type="text/javascript" src="<?php echo $js_path; ?>swfobject.js"></script>
+	<script type="text/javascript" src="<?php echo $js_path; ?>functions.js"></script>
 </head>
 <body class="frontpage">
 	<script type="text/javascript" src="<?php echo $js_path; ?>slider.js"></script>  
