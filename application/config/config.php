@@ -37,7 +37,7 @@
 |
 */
 
-$config['site_title'] = 'Blizzard Site';
+$config['site_title'] = 'Blizzard Entertainment';
 
 /*
 |--------------------------------------------------------------------------
