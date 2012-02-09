@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<frontpage>	
+	<banners defaultbanner="0">
+		<banner src="frontpage/es/banner-mists.swf" logo="frontpage/es/logos/logo-mists.png">
+			<button id="1" href="http://us.battle.net/wow/es/game/mists-of-pandaria/"/>
+			<button id="2" href="/es-mx/games/videos/index.html?v=mists:reveal"/>			
+		</banner>	
+		<banner src="b/static/content/frontpage/es/banner-sc2hots.swf" logo="frontpage/es/logos/logo-sc2hots.png">
+			<button id="1" href="http://us.battle.net/sc2/es/game/heart-of-the-swarm-preview/"/>
+			<button id="2" href="/es-mx/games/videos/index.html?v=sc2:hots-teaser"/>			
+		</banner>	
+		<banner src="frontpage/es/banner-cataclysm.swf" logo="frontpage/es/logos/logo-cataclysm.png">
+			<button id="1" href="/es-mx/games/cataclysm/index.html"/>
+			<button id="2" href="/es-mx/games/videos/index.html?v=cataclysm:cinematic"/>			
+		</banner>
+		<banner src="frontpage/es/banner-d3.swf" logo="frontpage/es/logos/logo-d3.png">
+			<button id="1" href="http://us.battle.net/d3/es/"/>			
+			<button id="2" href="http://us.battle.net/d3/es/media/videos/?view#/black-soulstone"/>
+		</banner>
+		<banner src="frontpage/es/banner-sc2.swf" logo="frontpage/es/logos/logo-sc2.png">
+			<button id="1" href="/es-mx/games/sc2/index.html"/>
+			<button id="2" href="/es-mx/games/videos/index.html?v=sc2:teaser"/>			
+		</banner>
+	</banners>
+</frontpage>

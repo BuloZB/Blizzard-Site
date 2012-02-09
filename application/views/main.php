@@ -5,7 +5,7 @@
 	<title><?php echo $site_title; ?></title>
 	<link rel="stylesheet" href="<?php echo $css_path; ?>master.css" />
 	<link rel="stylesheet" href="<?php echo $css_path; ?>es/local.css" />
-	<script type="text/javascript" src="<?php echo $js_path; ?>"></script>
+	<script type="text/javascript" src="<?php echo $js_path; ?>swfobject.js"></script>
 </head>
 <body class="frontpage">
 	<script type="text/javascript" src="<?php echo $js_path; ?>slider.js"></script>  
@@ -14,14 +14,14 @@
 		*	Esta sección controla lo que sería el SLIDER en Flash superior...No accesible aún
 		*/
 		var flashvars = {
-			importxmlpath : "/content/es-mx/frontpage.xml",
+			importxmlpath : "<?php echo $content_path; ?>es/frontpage.xml", //En esta ruta "es" deberá ser obtenida por la cookie del idioma almacenado.
 			mediahostpath : "<?php echo $flash_path; ?>"
 		};
 		var params = {
 			bgcolor : "#010d16",
 			quality : "autohigh",		
 			wmode : "transparent",
-			base : "/flash/",
+			base : "<?php echo $content_path; ?>",
 			allowScriptAccess : "always"
 		};
 		swfobject.embedSWF("<?php echo $flash_path; ?>header.swf", "flashHeader", "100%", "570", "9.0.0", false, flashvars, params, {});
