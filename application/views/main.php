@@ -1,16 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-	<title><?php echo $site_title; ?></title>
-	<link rel="stylesheet" href="<?php echo $css_path; ?>master.css" />
-	<link rel="stylesheet" href="<?php echo $css_path; ?>es/local.css" />
-	<script type="text/javascript" src="<?php echo $js_path; ?>jquery.js"></script>
-	<script type="text/javascript" src="<?php echo $js_path; ?>jquery.countdown.pack.js"></script>
-	<script type="text/javascript" src="<?php echo $js_path; ?>swfobject.js"></script>
-	<script type="text/javascript" src="<?php echo $js_path; ?>functions.js"></script>
-	<script type="text/javascript" src="<?php echo $js_path; ?>screenViewer.js"></script>
-</head>
 <body class="frontpage">
 	<script type="text/javascript" src="<?php echo $js_path; ?>slider.js"></script>  
 	<script type="text/javascript">
@@ -167,8 +154,8 @@
 						</dl>
 					</div> 
 				</div> 
-      <a href="#" class="spotlight1" style="background-image: url(/images/frontpage/es-mx/spotlight-sc2starter.jpg);"></a>
-      <a href="#" class="spotlight2" style="background-image: url(/_images/frontpage/es-mx/spotlight-wowtrial-alliance.jpg);"></a>
+      <a href="#" class="spotlight1" style="background-image: url(<?php echo $images_path; ?>frontpage/es/spotlight-sc2starter.jpg);"></a>
+      <a href="#" class="spotlight2" style="background-image: url(<?php echo $images_path; ?>frontpage/es/<?php echo $second_spotlight_image; ?>);"></a>
 			</div>                 
 		</div>       
 	</div>

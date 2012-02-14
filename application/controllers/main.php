@@ -34,7 +34,13 @@ class Main extends CI_Controller {
 		$info['flash_path'] = $this->flash_path;
 		$info['content_path'] = $this->content_path;
 		$info['site_title'] = $this->config->item('site_title');
+			$spotlights_images = array(
+				1 => "spotlight-wowtrial-alliance.jpg",
+				2 => "spotlight-wowtrial-horde.jpg",
+			);
+		$info['second_spotlight_image'] = $spotlights_images[rand(1,2)];
 		//Parte del sistema de "vistas" para englobalizar archivos
+		$this->load->view('global/head', $info);
 		$this->load->view('main', $info);
 		$this->load->view('global/footer', $info);
 	}
