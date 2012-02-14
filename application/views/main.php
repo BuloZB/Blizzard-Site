@@ -5,8 +5,11 @@
 	<title><?php echo $site_title; ?></title>
 	<link rel="stylesheet" href="<?php echo $css_path; ?>master.css" />
 	<link rel="stylesheet" href="<?php echo $css_path; ?>es/local.css" />
+	<script type="text/javascript" src="<?php echo $js_path; ?>jquery.js"></script>
+	<script type="text/javascript" src="<?php echo $js_path; ?>jquery.countdown.pack.js"></script>
 	<script type="text/javascript" src="<?php echo $js_path; ?>swfobject.js"></script>
 	<script type="text/javascript" src="<?php echo $js_path; ?>functions.js"></script>
+	<script type="text/javascript" src="<?php echo $js_path; ?>screenViewer.js"></script>
 </head>
 <body class="frontpage">
 	<script type="text/javascript" src="<?php echo $js_path; ?>slider.js"></script>  
@@ -34,19 +37,19 @@
 					<div id="flashBannerFallback" style="display:none">
 						<div class="static-banners">
 								<div id="bannerDiv0" class="static-banner" style="background-image:url(http://us.media.blizzard.com/blizzard/_images/frontpage/es-mx/banner-mists.jpg)">
-									<div class="inner-banner"><a href="http://us.blizzard.com/es-mx/games/videos/index.html?v=mists:reveal" style="right:177px; width:142px"></a><a href="http://us.battle.net/wow/es/game/mists-of-pandaria/" style="right:29px"></a></div>
+									<div class="inner-banner"><a href="#" style="right:177px; width:142px"></a><a href="#" style="right:29px"></a></div>
 						</div>
 								<div id="bannerDiv1" class="static-banner" style="background-image:url(http://us.media.blizzard.com/blizzard/_images/frontpage/es-mx/banner-blizzcon.jpg);display:none">
-									<div class="inner-banner"><a href="http://us.blizzard.com/blizzcon/es/" style="right:110px"></a></div>
+									<div class="inner-banner"><a href="#" style="right:110px"></a></div>
 						</div>
 								<div id="bannerDiv2" class="static-banner" style="background-image:url(http://us.media.blizzard.com/blizzard/_images/frontpage/es-mx/banner-cataclysm.jpg);display:none">
-									<div class="inner-banner"><a href="http://us.blizzard.com/es-mx/games/videos/index.html?v=cataclysm:cinematic" style="right:172px; width:142px"></a><a href="http://us.blizzard.com/es-mx/games/cataclysm/index.html" style="right:24px"></a></div>
+									<div class="inner-banner"><a href="#" style="right:172px; width:142px"></a><a href="#" style="right:24px"></a></div>
 						</div>
 								<div id="bannerDiv3" class="static-banner" style="background-image:url(http://us.media.blizzard.com/blizzard/_images/frontpage/es-mx/banner-sc2.jpg);display:none">
-									<div class="inner-banner"><a href="http://us.blizzard.com/es-mx/games/videos/index.html?v=sc2:teaser" style="right:172px; width:142px"></a><a href="http://us.blizzard.com/es-mx/games/sc2/index.html" style="right:24px"></a></div>
+									<div class="inner-banner"><a href="#" style="right:172px; width:142px"></a><a href="#" style="right:24px"></a></div>
 						</div>
 								<div id="bannerDiv4" class="static-banner" style="background-image:url(http://us.media.blizzard.com/blizzard/_images/frontpage/es-mx/banner-d3.jpg);display:none">
-									<div class="inner-banner"><a href="http://us.blizzard.com/es-mx/games/videos/index.html?v=d3:teaser" style="right:172px; width:142px"></a><a href="http://us.blizzard.com/diablo3/?rhtml=y" style="right:32px"></a></div>
+									<div class="inner-banner"><a href="#" style="right:172px; width:142px"></a><a href="#" style="right:32px"></a></div>
 						</div>
 							<a href="javascript:;" onclick="pageBanners('next')" class="static-banner-arrow arrow-right"></a>
 							<a href="javascript:;" onclick="pageBanners('prev')" class="static-banner-arrow arrow-left"></a>
@@ -169,16 +172,15 @@
 			</div>                 
 		</div>       
 	</div>
-		
-	<script type="text/javascript">
+		<script type="text/javascript">
 		var flashvars = {};
 		var params = {};
 		params.bgcolor = "#010d16";
 		params.quality = "autohigh";
 		params.wmode = "transparent";
-		params.base = "/_flash/";
+		params.base = "http://us.blizzard.com/_flash/";
 		params.allowScriptAccess = "always";
-		flashvars.importxmlpath = "<?php echo $content_path; ?>es/frontpage.xml";
+		flashvars.importxmlpath = "http://us.blizzard.com/_content/es-mx/frontpage.xml";
 		flashvars.mediahostpath = "http://us.media.blizzard.com/blizzard/_flash/";
 		var attributes = {};
 		swfobject.embedSWF("http://us.media.blizzard.com/blizzard/_flash/header.swf", "flashHeader", "100%", "570", "9.0.0", false, flashvars, params, attributes, bannerEmbedCallback);
@@ -200,31 +202,25 @@
 			bannerButtonList[3] = document.getElementById('bannerButton3');
 			bannerList[4] = document.getElementById('bannerDiv4');
 			bannerButtonList[4] = document.getElementById('bannerButton4');
-			
+
 		function activateBanner(elementIndex) {
 			clearTimeout(bannerSliderTimeout)
 			bannerSliderTimeout = setTimeout(function() {
 				pageBanners("next")
 			}, 5000)
-
 			if (elementIndex == activeIndex) {
 				return;
 			}
-
 			for (var x = 0; x < bannerButtonList.length; x++) {
 				if (bannerList[x].style.display != "none") {
 					$j(bannerList[x]).fadeOut();
 				}
 				bannerButtonList[x].className = "static-banner-button";
 			}
-
 			bannerButtonList[elementIndex].className = "static-banner-button active-banner-button";
-
 			$j(bannerList[elementIndex]).fadeIn();
-
 			var currentMargin = buttonRow.style.marginLeft;
 			currentMargin = currentMargin.substring(0, currentMargin.indexOf("px"))
-
 			if (elementIndex >= 3) {
 				buttonRow.style.marginLeft = "-116px";
 				//slideButtonRow(currentMargin * 1, -4, -116)
@@ -235,16 +231,13 @@
 
 			activeIndex = elementIndex;
 		}
-
 		function slideButtonRow(currentMargin, slideAmount, targetMargin) {
 			clearTimeout(buttonSliderTimeout)
 
 			var newMargin = (currentMargin + slideAmount);
 
 			if ((slideAmount > 0 && newMargin <= targetMargin) || (slideAmount < 0 && newMargin >= targetMargin)) {
-
 				buttonRow.style.marginLeft = newMargin + "px";
-
 				buttonSliderTimeout = setTimeout(function() {
 										slideButtonRow(newMargin, slideAmount, targetMargin)
 									}, 1)
@@ -267,9 +260,9 @@
 					newIndex = activeIndex - 1;
 				}
 			}
-
 			activateBanner(newIndex);
 		}
+
 		function bannerEmbedCallback(e) {
 			if (!e.success) {
 				var flashBannerFallback = document.getElementById("flashBannerFallback");
