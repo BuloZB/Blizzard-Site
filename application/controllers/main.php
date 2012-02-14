@@ -23,6 +23,8 @@ class Main extends CI_Controller {
 		$this->content_path = $this->site_url."static/content/";
 		//No debería ir al contenido estático pero por referencias lo hará por ahora.
 		$this->flash_path = $this->site_url."static/flash/";
+		
+		$this->load->Model('news_model');
 	}
 	
 	public function index()
@@ -39,6 +41,7 @@ class Main extends CI_Controller {
 				2 => "spotlight-wowtrial-horde.jpg",
 			);
 		$info['second_spotlight_image'] = $spotlights_images[rand(1,2)];
+		$info['news'] = $this->news_model->index_news();
 		//Parte del sistema de "vistas" para englobalizar archivos
 		$this->load->view('global/head', $info);
 		$this->load->view('main', $info);

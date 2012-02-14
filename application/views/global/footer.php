@@ -28,7 +28,7 @@
 				<span class="languagetitle">Idioma:   </span>
 				<div class="lang-select links" onMouseOver="this.mfocus=true" onMouseOut="this.mfocus=false">
                         <a class="language" href="javascript:;" onclick="$j('#locdrop').toggle();" onblur="btoggle('locdrop',this)">
-                        	<span class="languageitem">Español (MX)</span>
+                        	<span class="languageitem">Espa&ntilde;ol</span>
                             <span class="langarrow"></span>
                         </a>
                         <div class="langbox" id="locdrop">
@@ -38,21 +38,16 @@
                                 <div class="right"></div>
                                 <div class="content">
                                     <div class="regions">
-                                          <div class="regionus"><div class="regiontitle">América y Oceanía</div>
+                                          <div class="regionus"><div class="regiontitle">Am&eacute;rica y Ocean&iacute;a</div>
                                            <div class="languages">
                                               <a href="#">English</a><br />
-                                              <a href="#">Español</a><br />
-                                              <a href="#">Português</a><br />
+                                              <a href="#">Espa&ntilde;ol</a><br />
                                           </div>
                                           </div>
                                           <div class="regioneu"><div class="regiontitle">Europa</div>
                                            <div class="languages">
                                               <a href="#">English</a><br />
-                                              <a href="#">Deutsch</a><br />
-                                              <a href="#">Français</a><br />
-                                              <a href="#">Italiano</a><br />
-                                              <a href="#">Polski</a><br />
-                                              <a href="#">Español</a><br />
+                                              <a href="#">Espa&ntilde;ol</a><br />
                                           </div>
                                           </div>
                                           <div class="regioncn"><div class="regiontitle">Asia</div>
@@ -67,7 +62,7 @@
                                 <div class="left"></div>
                                 <div class="lang">
 			                        <a class="currentlanguage" href="javascript:;" onclick="$j('#locdrop').toggle();" onblur="btoggle('locdrop',this)">
-                                    	<span class="languageitem">Español (MX)</span>
+                                    	<span class="languageitem">Espa&ntilde;ol</span>
 			                            <span class="langarrow"></span>
                                  	</a>
                                 </div>

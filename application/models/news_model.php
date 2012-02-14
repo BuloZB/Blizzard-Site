@@ -9,7 +9,7 @@ class News_model extends CI_Model {
 	
 	public function index_news()
 	{
-			$query = $this->db->query("SELECT * FROM `bs_news` ORDER BY `id` DESC LIMIT 5");
+			$query = $this->db->query("SELECT * FROM `bs_news` ORDER BY `id` DESC LIMIT 4");
 			return $query->result_array();
 	}
 }

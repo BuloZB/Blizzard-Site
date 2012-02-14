@@ -1,6 +1,7 @@
 <body class="frontpage">
 	<script type="text/javascript" src="<?php echo $js_path; ?>slider.js"></script>  
 	<script type="text/javascript">
+		
 		/*
 		*	Esta sección controla lo que sería el SLIDER en Flash superior...No accesible aún
 		*/
@@ -102,55 +103,23 @@
                         <div class="viewallnews"><a href="#">Ver todas las noticias</a></div>
                     </div>
 					<div id="newsbox">
-						<dl class="sliderbox" id="slider2">                   
-        <dt><span class="date">null</span><span class="title">null</span></dt>
-        <dd>
-            	<div class="thumb"><a  href="#"><img src="http://us.media2.battle.net/cms/blog_thumbnail/257619BPANMW1328574444716.jpg"/></a></div>
-            <div class="text">
-			null
-            <div>
-            <a class="readmoreline" href="#">
-            	<span class="arrow"></span>leer m&aacute;s
-            </a>
-            </div>
-            </div>
-        </dd>
-        <dt><span class="date">null</span><span class="title">null</span></dt>
-        <dd>
-            	<div class="thumb"><a  href="#" ><img src="http://us.media1.battle.net/cms/blog_thumbnail/5REYLSZP9MJT1327507020394.jpg"/></a></div>
-            <div class="text">
-            null
-            <div>
-            <a class="readmoreline" href="#">
-            	<span class="arrow"></span>leer m&aacute;s
-            </a>
-            </div>
-            </div>
-        </dd>
-        <dt><span class="date">null</span><span class="title">null</span></dt>
-        <dd>
-            	<div class="thumb"><a  href="#"><img src="http://us.media4.battle.net/cms/blog_thumbnail/QM1ETPOSU7CF1321996122363.jpg"/></a></div>
-            <div class="text">
-            null
-            <div>
-            <a class="readmoreline" href="#">
-            	<span class="arrow"></span>leer m&aacute;s
-            </a>
-            </div>
-            </div>
-        </dd>
-        <dt><span class="date">null</span><span class="title">null</span></dt>
-        <dd>
-            	<div class="thumb"><a  href="#"><img src="http://us.media1.battle.net/cms/blog_thumbnail/7GLU3GVF1ZGM1319216366055.jpg"/></a></div>
-            <div class="text">
-            <p><strong>null</strong>
-            <div>
-            <a class="readmoreline" href="#">
-            	<span class="arrow"></span>leer m&aacute;s
-            </a>
-            </div>
-            </div>
-        </dd>
+						<dl class="sliderbox" id="slider2">               
+					<?php
+						foreach($news as $news_info){
+							echo "<dt><span class=\"date\">".$news_info['day']."/".$news_info['month']."/".$news_info['year']."</span><span class=\"title\">".$news_info['title']."</span></dt>
+							<dd>
+									<div class=\"thumb\"><a href=\"news/".$news_info['id']."/".str_replace(" ", "-", str_replace(".", "-", str_replace(":", "", $news_info['title'])))."\" ><img src=\"".$news_info['image']."\" alt=\"".$news_info['title']."\"/></a></div>
+								<div class=\"text\">
+								".word_limiter($news_info['text'],30)."
+								<div>
+								<a class=\"readmoreline\" href=\"news/".$news_info['id']."/".str_replace(" ", "-", str_replace(".", "-", str_replace(":", "", $news_info['title'])))."\">
+									<span class=\"arrow\"></span>leer m&aacute;s
+								</a>
+								</div>
+								</div>
+							</dd>";
+						}
+					?>
 						</dl>
 					</div> 
 				</div> 
