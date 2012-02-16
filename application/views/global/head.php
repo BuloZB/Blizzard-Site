@@ -23,7 +23,7 @@
 			akamaiBaseUrl = "http://us.media.blizzard.com/";
 			//DO NOT REMOVE
 			var $j = jQuery.noConflict();
-			if(Browser.ie7) { addStylesheet('/_css/ie7.css'); }else if(Browser.ie6) { addStylesheet('/_css/ie6.css');			
-			addStylesheet('/_css/es_MX/local_ie6.css'); }else if(Browser.opera) { addStylesheet('/_css/opera.css'); }else if(Browser.safari) { addStylesheet('/_css/safari.css'); }
+			if(Browser.ie7) { addStylesheet('<?php echo $css_path; ?>ie7.css'); }else if(Browser.ie6) { addStylesheet('<?php echo $css_path; ?>ie6.css');			
+			addStylesheet('<?php echo $css_path; ?>es/local_ie6.css'); }else if(Browser.opera) { addStylesheet('<?php echo $css_path; ?>opera.css'); }else if(Browser.safari) { addStylesheet('<?php echo $css_path; ?>safari.css'); }
 		</script>
 </head>
