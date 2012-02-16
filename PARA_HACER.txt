@@ -18,6 +18,7 @@
 | -Crear librería para rutas y obtenciones por
 |  archivos
 | -Minimizar cualquier JS disponible, slider.js listo
+| -Hacer multi-idiomas el 'ayudante' date_helper.php
 ****************************************************
 | Drakantas
 ****************************************************
