@@ -6,11 +6,11 @@
 	<div class="navigation">
 		<div class="bg"></div>
 		<div class="bar">
-			<a href="#" class="navgames"></a>
-			<a href="#" class="navcompany"></a>
-			<a href="#" class="navcommunity"></a>
-			<a href="#" class="navsupport"></a>
-			<a href="#" class="navstore"></a>
+			<a href="<?php echo $base_url; ?>games/" class="navgames"></a>
+			<a href="<?php echo $base_url; ?>company/" class="navcompany"></a>
+			<a href="<?php echo $base_url; ?>community/" class="navcommunity"></a>
+			<a href="<?php echo $base_url; ?>support/" class="navsupport"></a>
+			<a href="<?php echo $base_url; ?>store/" class="navstore"></a>
 		</div>
 		<div class="searchbox">
 			<input type="text" name="q" id="q" class="box" value="Buscar en Blizzard.com" onfocus="clearDefault(this)" onblur="setDefault(this)"/>
@@ -18,7 +18,7 @@
 		<div class="searchbutton">
 			<input type="image" value="" class="button" src="<?php echo $images_path; ?>layout/pixel.gif"/>
 		</div>
-		<a href="#" class="blizzlink"></a>
+		<a href="<?php echo $base_url; ?>" class="blizzlink"></a>
 	</div>
 	</form>
 				</div>
