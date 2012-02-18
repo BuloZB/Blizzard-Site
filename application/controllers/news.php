@@ -65,7 +65,7 @@ class News extends CI_Controller{
 		$info['site_title'] = $this->config->item('site_title');
 		
 		if($id == 0 || is_null($id))
-			redirect('/404', 'refresh');
+			redirect($this->site_url.'error_404', 'refresh');
 			
 		$info['load_date'] = $this->load->helper('date');
 

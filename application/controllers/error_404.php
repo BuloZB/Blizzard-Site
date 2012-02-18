@@ -1,8 +1,5 @@
-<?php  
-if (!DEFINED('BASEPATH')) 
-	exit('<h1>Error 403</h1><p>Acceso prohibido a este archivo</p>'); //Todo esto debería tener un estilo igual al de Blizzard [Soon]
-
-class Main extends CI_Controller {
+<?php
+class error_404 extends CI_Controller{
 
 	//URL del sitio (configuración)
 	public $site_url;
@@ -23,12 +20,10 @@ class Main extends CI_Controller {
 		$this->content_path = $this->site_url."static/content/";
 		//No debería ir al contenido estático pero por referencias lo hará por ahora.
 		$this->flash_path = $this->site_url."static/flash/";
-		
-		$this->load->Model('news_model');
+
 	}
 	
-	public function index()
-	{
+	public function index(){
 		$info['base_url'] = $this->site_url;
 		$info['css_path'] = $this->css_path;
 		$info['js_path'] = $this->js_path;
@@ -36,19 +31,10 @@ class Main extends CI_Controller {
 		$info['flash_path'] = $this->flash_path;
 		$info['content_path'] = $this->content_path;
 		$info['site_title'] = $this->config->item('site_title');
-			$spotlights_images = array(
-				1 => "spotlight-wowtrial-alliance.jpg",
-				2 => "spotlight-wowtrial-horde.jpg",
-			);
-		$info['second_spotlight_image'] = $spotlights_images[rand(1,2)];
-		$info['news'] = $this->news_model->index_news();
-		//Parte del sistema de "vistas" para englobalizar archivos
+		
 		$this->load->view('global/head', $info);
-		$this->load->view('main', $info);
+		$this->load->view('error_404', $info);
 		$this->load->view('global/footer', $info);
 	}
-
 }
-
-/* End of file welcome.php */
-/* Location: ./application/controllers/welcome.php */
+?>
