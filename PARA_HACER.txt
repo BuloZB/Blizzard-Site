@@ -19,6 +19,12 @@
 |  archivos
 | -Minimizar cualquier JS disponible, slider.js listo
 | -Hacer multi-idiomas el 'ayudante' date_helper.php
+| -Arreglar los links "muertos" e irlos habilitando
+|  ya que el error 404 ya está listo y con el 
+| representaré por ahora los errores de páginas 
+| faltantes.
+| -Terminar el sistema de noticias antes que 
+| cualquier cosa.
 ****************************************************
 | Drakantas
 ****************************************************
