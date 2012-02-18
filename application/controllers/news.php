@@ -37,9 +37,16 @@ class News extends CI_Controller{
 		$info['news'] = $this->news_model->general_news();
 		$info['date_news'] = $this->news_model->date_news();
 		$info['load_date'] = $this->load->helper('date');
+		//Esta sección (y su correspondiente en el modelador y el visualizador deben ser probadas...
+		$total_news = $this->news_model->total_news();
+		(int)$total_news = $total_news / 15;
 		
+		if((int)$total_news <= 0)
+			$total_news = 1;
+		
+		$info['total_news'] = $total_news;
 		$this->load->view('global/head', $info);
-		$this->load->view('news', $info);
+		$this->load->view('news/main', $info);
 		$this->load->view('global/footer', $info);
 	}
 	

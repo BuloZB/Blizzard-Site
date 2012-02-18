@@ -59,7 +59,7 @@
 <?php
 foreach($date_news as $item_date_news)
 {
- echo "<a href=\"".$base_url."/news/date/".$item_date_news['month']."/".$item_date_news['year']."\">\n
+ echo "<a href=\"".$base_url."news/date/".$item_date_news['month']."/".$item_date_news['year']."\">\n
 		<span class=\"titlecontents\"><span class=\"arc_title arc_news\">".date_digit_to_text($item_date_news['month'])." ".$item_date_news['year']."</span></span></a>\n";
 }
 ?>
@@ -79,9 +79,15 @@ foreach($date_news as $item_date_news)
 			<div class="pages">
 				<div class="numbers">
 					<div>
-							<a class="selected" href="?page=1">1</a>
-							<a href="?page=2">2</a>
-							<a href="?page=3">3</a>
+					<?php
+						for($i = 0; $i < $total_news; $i++)
+						{
+							if($i == 0)
+								echo "<a class=\"selected\" href=\"".$base_url."/news/page/1\">".($i + 1)."</a>";
+							else
+								echo "<a href=\"".$base_url."/news/page/1\">".($i + 1)."</a>";
+						}
+					?>
 					</div>
 				</div>
 			</div>
@@ -108,9 +114,15 @@ foreach($news as $item_news)
 			<div class="pages">
 				<div class="numbers">
 					<div>
-							<a class="selected" href="?page=1">1</a>
-							<a href="?page=2">2</a>
-							<a href="?page=3">3</a>
+					<?php
+						for($i = 0; $i < $total_news; $i++)
+						{
+							if($i == 0)
+								echo "<a class=\"selected\" href=\"".$base_url."/news/page/1\">".($i + 1)."</a>";
+							else
+								echo "<a href=\"".$base_url."/news/page/1\">".($i + 1)."</a>";
+						}
+					?>
 					</div>
 				</div>
 			</div>

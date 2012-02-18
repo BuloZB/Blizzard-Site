@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<flashtext>
+	<styles>
+		<pagetitle fontname="font_museo.swf" fontid="MuseoSans" fontsize="34" color="0xFFFFFF" uppercase="true" gradientcolor1="0xFFFFFF" gradientcolor2="0x93d3f7" gradientangle="90" shadowcolor="0x06151e" shadowblurx="5" shadowblury="5" shadowstrength="2" shadowalpha="20" shadowdistance="1" shadowangle="90"/>
+		<pagetitle-small fontname="font_museo.swf" fontid="MuseoSans" fontsize="25" color="0xFFFFFF" uppercase="true" gradientcolor1="0xFFFFFF" gradientcolor2="0x93d3f7" gradientangle="90" shadowcolor="0x06151e" shadowblurx="5" shadowblury="5" shadowstrength="2" shadowalpha="20" shadowdistance="1" shadowangle="90"/>
+		<landingtitle fontname="font_museo.swf" fontid="MuseoSans" fontsize="34" color="0xFFFFFF" uppercase="true" gradientcolor1="0xFFFFFF" gradientcolor2="0x93d3f7" gradientangle="90" shadowcolor="0x06151e" shadowblurx="5" shadowblury="5" shadowstrength="2" shadowalpha="20" shadowdistance="1" shadowangle="90"/>		
+		<boxtitle fontname="font_museo.swf" fontid="MuseoSans" fontsize="14" color="0xFFFFFF" uppercase="true"/>
+		<videosubtitle fontname="font_museo.swf" fontid="MuseoSans" fontsize="14" color="0xFFFFFF" uppercase="true"/>
+		<subtitle fontname="font_museo.swf" fontid="MuseoSans" fontsize="18" color="0xFFFFFF" uppercase="true"/>				
+		<archivetitle fontname="font_museo.swf" fontid="MuseoSans" fontsize="22" color="0xFFFFFF" uppercase="true"/>						
+		<legacytitle fontname="font_museo.swf" fontid="MuseoSans" fontsize="30" color="0xFFFFFF" letterspacing="-1"/>		
+		<blizzcasttitle fontname="font_microgammabold.swf" fontid="MicrogammaBold" fontsize="20" color="0xFFFFFF" uppercase="true" padding="1,5,1,3" gradientcolor1="0xFFFFFF" gradientcolor2="0xbadff4" gradientangle="90" glowcolor="0x0060ff" glowblurx="9" glowblury="7" glowstrength="3" glowalpha="70"/>
+		<dropcap-warcraft fontname="font_frizctt.swf" fontid="FrizCTT" fontsize="76" color="0xC87F1A" uppercase="true" gradientcolor1="0xFDE20D" gradientcolor2="0xC87F1A" gradientangle="90" glowcolor="0x5b491d" glowblurx="9" glowblury="5" glowstrength="3" glowalpha="70" padding="-12,3,-2,3"/>
+		<dropcap-starcraft fontname="font_microgramma.swf" fontid="Microgramma" fontsize="80" color="0x96d34b" uppercase="true" glowcolor="0x3d9d26" glowblurx="9" glowblury="5" glowstrength="3" glowalpha="70" padding="-22,3,5,3"/>
+		<dropcap-diablo fontname="font_exocetlight.swf" fontid="ExocetLight" fontsize="85" color="0xFDFC8D" uppercase="true" glowcolor="0xd85f1a" glowblurx="9" glowblury="5" glowstrength="3" glowalpha="70" padding="-16,20,-2,0"/>		
+		<midtitle fontname="font_microgammabold.swf" fontid="MicrogammaBold" fontsize="30" color="0xFFFFFF"  glowcolor="0x11A8E1" glowblurx="9" glowblury="5" glowstrength="3" glowalpha="70" padding="30,3,-10,3"/>
+	</styles>
+</flashtext>

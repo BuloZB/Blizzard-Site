@@ -24,4 +24,9 @@ class News_model extends CI_Model {
 			$query = $this->db->query("SELECT * FROM `bs_news` ORDER BY `month`, `year` ");
 			return $query->result_array();
 	}
+	
+	public function total_news(){
+			$query = $this->db->query("SELECT * FROM `bs_news`");
+			return $query->num_rows();
+	}
 }

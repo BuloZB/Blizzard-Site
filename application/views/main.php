@@ -108,11 +108,11 @@
 						foreach($news as $news_info){
 							echo "<dt><span class=\"date\">".$news_info['day']."/".$news_info['month']."/".$news_info['year']."</span><span class=\"title\">".$news_info['title']."</span></dt>
 							<dd>
-									<div class=\"thumb\"><a href=\"news/".$news_info['id']."/".str_replace(" ", "-", str_replace(".", "-", str_replace(":", "", $news_info['title'])))."\" ><img src=\"".$news_info['image']."\" alt=\"".$news_info['title']."\"/></a></div>
+									<div class=\"thumb\"><a href=\"news/view/".$news_info['id']."/".str_replace(" ", "-", str_replace(".", "-", str_replace(":", "", $news_info['title'])))."\" ><img src=\"".$news_info['image']."\" alt=\"".$news_info['title']."\"/></a></div>
 								<div class=\"text\">
 								".word_limiter($news_info['text'],30)."
 								<div>
-								<a class=\"readmoreline\" href=\"news/".$news_info['id']."/".str_replace(" ", "-", str_replace(".", "-", str_replace(":", "", $news_info['title'])))."\">
+								<a class=\"readmoreline\" href=\"news/view/".$news_info['id']."/".str_replace(" ", "-", str_replace(".", "-", str_replace(":", "", $news_info['title'])))."\">
 									<span class=\"arrow\"></span>leer m&aacute;s
 								</a>
 								</div>
