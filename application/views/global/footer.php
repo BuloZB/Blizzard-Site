@@ -77,9 +77,6 @@
 		</div>
             <div class="ratings">
                 <a href="#" class="esrb-footer" target="_blank"></a>
-               	<a class="truste-link" href="#" title="Validar certificaci&oacute;n de privacidad TRUSTe" target="_blank">
-					<img src="//privacy-policy.truste.com/certified-seal/wps/en/us.battle.net/seal_m.png" alt="Validar certificaci&oacute;n de privacidad TRUSTe"/>
-				</a>
                 <div class="clear"></div>
             </div>
 	</div>
