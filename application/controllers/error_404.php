@@ -1,4 +1,7 @@
 <?php
+if (!DEFINED('BASEPATH')) 
+	exit('<h1>Error 403</h1><p>Acceso prohibido a este archivo</p>'); //Todo esto debería tener un estilo igual al de Blizzard [Soon]
+
 class error_404 extends CI_Controller{
 
 	//URL del sitio (configuración)
