@@ -73,14 +73,18 @@
 
 $active_group = 'default';
 $active_record = TRUE;
-
+//Host de la base de datos
 $db['default']['hostname'] = 'localhost';
-$db['default']['username'] = '';
-$db['default']['password'] = '';
-$db['default']['database'] = '';
+//Usuario de la base de datos
+$db['default']['username'] = 'root';
+//Contraseña de la base de datos
+$db['default']['password'] = 'password';
+//Nombre de la base de datos
+$db['default']['database'] = 'blizzard';
+//--- No modificar nada hacia abajo ---
 $db['default']['dbdriver'] = 'mysql';
 $db['default']['dbprefix'] = '';
-$db['default']['pconnect'] = FALSE;
+$db['default']['pconnect'] = TRUE;
 $db['default']['db_debug'] = TRUE;
 $db['default']['cache_on'] = FALSE;
 $db['default']['cachedir'] = '';
