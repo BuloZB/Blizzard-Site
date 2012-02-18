@@ -54,9 +54,30 @@ class News extends CI_Controller{
 		echo $id;
 	}
 	
-	public function news($id = 0, $mensaje = "")
+	public function view($id = 0, $title = "")
 	{
-		$this->load->view('view-news');
+		$info['base_url'] = $this->site_url;
+		$info['css_path'] = $this->css_path;
+		$info['js_path'] = $this->js_path;
+		$info['images_path'] = $this->images_path;
+		$info['flash_path'] = $this->flash_path;
+		$info['content_path'] = $this->content_path;
+		$info['site_title'] = $this->config->item('site_title');
+		
+		if($id == 0 || $title == "" || is_null($id) || is_null($title))
+			redirect('/404', 'refresh');
+			
+		$info['load_date'] = $this->load->helper('date');
+
+		
+		$info['date_news'] = $this->news_model->date_news();
+		$info['news'] = $this->news_model->view_new($id);
+		
+
+		
+		$this->load->view('global/head', $info);
+		$this->load->view('news/view', $info);
+		$this->load->view('global/footer', $info);
 	}
 	
 }

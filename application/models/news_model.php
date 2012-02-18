@@ -29,4 +29,9 @@ class News_model extends CI_Model {
 			$query = $this->db->query("SELECT * FROM `bs_news`");
 			return $query->num_rows();
 	}
+	
+	public function view_new($id){
+		$query = $this->db->query("SELECT * FROM `bs_news` WHERE `id`='".$id."'");
+		return $query->result_array();
+	}
 }
