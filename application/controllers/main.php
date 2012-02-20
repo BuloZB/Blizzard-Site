@@ -29,7 +29,7 @@ class Main extends CI_Controller {
 	
 	public function index()
 	{
-		$info['landing_footer'] = true;
+		$info['landing_footer'] = false;
 		$info['base_url'] = $this->site_url;
 		$info['css_path'] = $this->css_path;
 		$info['js_path'] = $this->js_path;
