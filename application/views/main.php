@@ -100,7 +100,7 @@
 						<div class="latestnews"></div>
                         <div class="facebookicon"><a href="#" title="Blizzard en Facebook"></a></div>
 						<div class="rssicon"><a href="#" title="Noticias en RSS"></a></div>
-                        <div class="viewallnews"><a href="#">Ver todas las noticias</a></div>
+                        <div class="viewallnews"><a href="<?php echo $base_url; ?>news">Ver todas las noticias</a></div>
                     </div>
 					<div id="newsbox">
 						<dl class="sliderbox" id="slider2">               

@@ -27,7 +27,6 @@
 | cualquier cosa.
 | -Arreglar el bug que hace que las fechas salgan
 | repetidas en el sistema de noticias
-| -Arreglar el bug de el link "Noticias actuales"
 ****************************************************
 | Drakantas
 ****************************************************

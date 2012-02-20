@@ -53,7 +53,7 @@
             </div>
             <div class="newsarchive">
                 <div class="archive_nav">
-<a class="selected" href="<?php echo $base_url; ?>/news"><span class="titlecontents"><span class="arc_title arc_news">
+<a class="selected" href="<?php echo $base_url; ?>news"><span class="titlecontents"><span class="arc_title arc_news">
                                         Noticias actuales
 								</span></span></a>
 <?php
