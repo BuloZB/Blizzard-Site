@@ -30,20 +30,6 @@ a.dl_btn:link, a.dl_btn:active, a.dl_btn:visited  {background-image:url(../../_i
 	.community-landing .links .standardbox .middlebar .backgroundthree a.youtube {width:300px; height: 135px; background: url(../../images/lang/es/communitycard-youtube.jpg); display: block; }
 	.community-landing .communitytext {}
 
-	.games-landing .allgames .standardbox .middlebar .backgroundthree a.sc1 {background: url(../../images/lang/es/gamecard-games-sc1.jpg);}
-	.games-landing .allgames .standardbox .middlebar .backgroundthree a.sc2 {background: url(../../images/lang/es/gamecard-games-sc2.jpg);}
-	.games-landing .allgames .standardbox .middlebar .backgroundthree a.cataclysm {background: url(../../images/lang/es/gamecard-games-cataclysm.jpg);}
-	.games-landing .allgames .standardbox .middlebar .backgroundthree a.war3 {background: url(../../images/lang/es/gamecard-games-war3.jpg); }
-	.games-landing .allgames .standardbox .middlebar .backgroundthree a.wow {background: url(../../images/lang/es/gamecard-games-wow.jpg);}
-	.games-landing .allgames .standardbox .middlebar .backgroundthree a.bc {background: url(../../images/lang/es/gamecard-games-bc.jpg);}
-	.games-landing .allgames .standardbox .middlebar .backgroundthree a.wrath {background: url(../../images/lang/es/gamecard-games-wrath.jpg);}
-	.games-landing .allgames .standardbox .middlebar .backgroundthree a.d2 {background: url(../../images/lang/es/gamecard-games-d2.jpg);}
-	.games-landing .allgames .standardbox .middlebar .backgroundthree a.legacy {background: url(../../images/lang/es/gamecard-games-legacy.jpg);}
-
-	.games-landing .underdev .standardbox .middlebar a.mists {background: url(../../images/lang/es/gamecard-games-mists.jpg);}
-	.games-landing .underdev .standardbox .middlebar a.sc2-hots {background: url(../../images/lang/es/gamecard-games-hots.jpg);}
-	.games-landing .underdev .standardbox .middlebar a.d3 {background: url(../../images/lang/es/gamecard-games-d3.jpg); }	
-	
 	.games-landing .explore .standardbox .middlebar .backgroundthree a.trailers {background: url(../../images/lang/es/gamecard-explore-trailers.jpg); }
 	.games-landing .explore .standardbox .middlebar .backgroundthree a.legacy {background: url(../../images/lang/es/gamecard-explore-legacy.jpg); }
 	.games-landing .explore .standardbox .middlebar .backgroundthree a.music {background: url(../../images/lang/es/gamecard-explore-music.jpg);}

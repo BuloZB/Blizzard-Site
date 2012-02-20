@@ -1,5 +1,13 @@
-<div class="footercontainer">
-	<div class="footer">
+<?php
+	if($landing_footer == true)
+	{
+		echo "<div class=\"landing-footer\">
+				<div class=\"footer\">";
+	}else{
+		echo "<div class=\"footercontainer\">
+				<div class=\"footer\">";
+	}
+?>
 		<a href="#" class="logo-blizzard"></a>
 		<a href="#" class="logo-battlenet" target="_blank"></a>
 		<div class="footercontents">
@@ -80,37 +88,7 @@
                 <div class="clear"></div>
             </div>
 	</div>
-    </div>
-		<div id="blackout" onClick="sV.close()"></div>
-		<div class="divcenter"><div id="screenViewer" style="display:none" class="frontpage_sv">
-			<a href="javascript:;" onclick="sV.close()" class="close"><!-- --></a>
+   </div>
 
-	        <div class="topBorder"></div>
-	        <div class="rightBorder"></div>
-	        <div class="bottomBorder"></div>
-	        <div class="leftBorder"></div>
-	        <div class="topLeft"></div>
-	        <div class="topRight"></div>
-	        <div class="bottomLeft"></div>
-	        <div class="bottomRight"></div>
-	        <div class="topDeco"></div>
-
-	        <div id="viewerTitle"><!-- --></div>
-
-	        <div id="viewerCopyLink"><!-- --></div>
-
-	        <div id="viewerDescImage"><!-- --></div>
-
-	        <div id="loadingAnimation" style="display:none"><!-- --></div>
-
-	        <a href="javascript:;" onclick="sV.prevImage();" id="pageLeft"><!-- --></a>
-	        <a href="javascript:;" onclick="sV.nextImage();" id="pageRight"><!-- --></a>
-
-	        <div id="viewerContent">
-				<div class="viewer-wrapper">
-					<div id="videoContainer"><!-- --></div>
-				</div>
-	        </div>
-		</div></div>
    	</body>
 </html>

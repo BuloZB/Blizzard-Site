@@ -26,6 +26,7 @@ class News extends CI_Controller{
 	}
 	
 	public function index(){
+		$info['landing_footer'] = true;
 		$info['base_url'] = $this->site_url;
 		$info['css_path'] = $this->css_path;
 		$info['js_path'] = $this->js_path;
@@ -51,11 +52,13 @@ class News extends CI_Controller{
 	}
 	
 	public function page($id = 0){
+		$info['landing_footer'] = true;
 		echo $id;
 	}
 	
 	public function view($id = 0, $title = "")
 	{
+		$info['landing_footer'] = true;
 		$info['base_url'] = $this->site_url;
 		$info['css_path'] = $this->css_path;
 		$info['js_path'] = $this->js_path;
@@ -82,6 +85,7 @@ class News extends CI_Controller{
 	
 	public function date($month = 00, $year = 0000)
 	{
+		$info['landing_footer'] = true;
 		$info['base_url'] = $this->site_url;
 		$info['css_path'] = $this->css_path;
 		$info['js_path'] = $this->js_path;
