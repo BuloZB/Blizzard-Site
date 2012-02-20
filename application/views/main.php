@@ -98,8 +98,8 @@
 				<div class="newscontainer">
 					<div class="newsheader">
 						<div class="latestnews"></div>
-                        <div class="facebookicon"><a href="#" title="Blizzard en Facebook"></a></div>
-						<div class="rssicon"><a href="#" title="Noticias en RSS"></a></div>
+                        <div class="facebookicon"><a href="<?php echo $facebook_url; ?>" title="Blizzard en Facebook"></a></div>
+						<div class="rssicon"><a href="<?php echo $base_url; ?>rss" title="Noticias en RSS"></a></div>
                         <div class="viewallnews"><a href="<?php echo $base_url; ?>news">Ver todas las noticias</a></div>
                     </div>
 					<div id="newsbox">

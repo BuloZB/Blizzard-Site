@@ -42,4 +42,5 @@ class News_model extends CI_Model {
 		$query = $this->db->query("SELECT * FROM `bs_news` WHERE `month` = '".$month."' AND `year` = '".$year."'");
 		return $query->result_array();
 	}
+
 }

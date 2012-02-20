@@ -36,6 +36,7 @@ class Main extends CI_Controller {
 		$info['images_path'] = $this->images_path;
 		$info['flash_path'] = $this->flash_path;
 		$info['content_path'] = $this->content_path;
+		$info['facebook_url'] = $this->config->item('facebook_url');
 		$info['site_title'] = $this->config->item('site_title');
 			$spotlights_images = array(
 				1 => "spotlight-wowtrial-alliance.jpg",

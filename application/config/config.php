@@ -409,6 +409,23 @@ $config['rewrite_short_tags'] = FALSE;
 */
 $config['proxy_ips'] = '';
 
+/*
+|--------------------------------------------------------------------------
+| Facebook URL
+|--------------------------------------------------------------------------
+| Aquí va la dirección web del Facebook  en modo que funcione el link
+| en la página principal. Adicionalmente se aclara que esta configuración
+| es de forma temporal mientras se implementa todo el sistema de administra-
+| ción en la web y las configuraciones fuente en la base de datos.
+|
+| El formato debe ser el siguiente:
+| http://facebook.com/xxxxx 
+| Dónde 'xxxxx' equivale a la URL adicional que genera Facebook 
+|
+| Default: URL Directa a Facebook
+*/
+
+$config['facebook_url'] = 'http://facebook.com';
 
 /* End of file config.php */
 /* Location: ./application/config/config.php */
