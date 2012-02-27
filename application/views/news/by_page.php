@@ -53,7 +53,7 @@
             </div>
             <div class="newsarchive">
                 <div class="archive_nav">
-<a href="<?php echo $base_url; ?>news"><span class="titlecontents"><span class="arc_title arc_news">
+<a class="selected" href="<?php echo $base_url; ?>news"><span class="titlecontents"><span class="arc_title arc_news">
                                         Noticias actuales
 								</span></span></a>
 <?php
@@ -67,15 +67,11 @@ $unique_date = array_unique($date);
 for($i = 0; $i < count($unique_date); $i++)
 {
 	$print_date = explode("/", $unique_date[$i]);
-	if($print_date[0] == $month && $print_date[1] == $year)
-		$selected = "class=\"selected\"";
-	else
-		$selected = "";
-	echo "<a href=\"".$base_url."news/date/".$unique_date[$i]."\" ".$selected.">\n
+	echo "<a href=\"".$base_url."news/date/".$unique_date[$i]."\">\n
 			<span class=\"titlecontents\"><span class=\"arc_title arc_news\">".date_digit_to_text($print_date[0])." ".$print_date[1]."</span></span></a>\n";
 }
 ?>
-               </div>
+                </div>
                 <div class="archivenews">
                 	<div class="currentnewsmonth">
 	                		<div id="flashtextcontainer1" class="flashtextcontainer" >
@@ -86,10 +82,29 @@ for($i = 0; $i < count($unique_date); $i++)
             swfobject.embedSWF("<?php echo $flash_path; ?>flashtext.swf", "flashtext1", "100%", "100%", "9.0.0", false, flashvars, params);
         </script></div>
 	</div>
-                    </div>	
+                    </div>
+		<div class="paging">
+			<div class="pages">
+				<div class="numbers">
+					<div>
+					<?php
+						for($i = 0; $i < $total_news; $i++)
+						{
+							if(($i + 1) == $page)
+								$selected = "class=\"selected\"";
+							else
+								$selected = "";
+								
+							echo "<a ".$selected." href=\"".$base_url."news/page/".($i + 1)."\">".($i + 1)."</a>";
+						}
+					?>
+					</div>
+				</div>
+			</div>
+		</div>
                     <dl>
 <?php
-foreach($news_by_date as $item_news)
+foreach($by_page as $item_news)
 {
 	echo "<a id=\"".$item_news['id']."\"></a>\n
 			<dt class=\"open\"><span class=\"date\">".$item_news['day']."/".$item_news['month']."/".$item_news['year']."</span>\n
@@ -102,8 +117,29 @@ foreach($news_by_date as $item_news)
 			</dd>
 				<dd class=\"footer\"></dd>";
 }
-?>                         
+?>                                                                          
                     </dl>
+					
+		<div class="paging">
+			<div class="pages">
+				<div class="numbers">
+					<div>
+					<?php
+						for($i = 0; $i < $total_news; $i++)
+						{
+							if(($i + 1) == $page)
+								$selected = "class=\"selected\"";
+							else
+								$selected = "";
+								
+							echo "<a ".$selected." href=\"".$base_url."news/page/".($i + 1)."\">".($i + 1)."</a>";
+						}
+					?>
+					</div>
+				</div>
+			</div>
+		</div>
+					
                 </div>
             </div>
 		</div>            

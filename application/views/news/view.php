@@ -57,10 +57,18 @@
                                         Noticias actuales
 								</span></span></a>
 <?php
+$date = array(); $i = 0;
 foreach($date_news as $item_date_news)
 {
- echo "<a href=\"".$base_url."news/date/".$item_date_news['month']."/".$item_date_news['year']."\">\n
-		<span class=\"titlecontents\"><span class=\"arc_title arc_news\">".date_digit_to_text($item_date_news['month'])." ".$item_date_news['year']."</span></span></a>\n";
+	$date[$i] = $item_date_news['month']."/".$item_date_news['year'];
+	$i++;
+}
+$unique_date = array_unique($date);
+for($i = 0; $i < count($unique_date); $i++)
+{
+	$print_date = explode("/", $unique_date[$i]);
+	echo "<a href=\"".$base_url."news/date/".$unique_date[$i]."\">\n
+			<span class=\"titlecontents\"><span class=\"arc_title arc_news\">".date_digit_to_text($print_date[0])." ".$print_date[1]."</span></span></a>\n";
 }
 ?>
                </div>

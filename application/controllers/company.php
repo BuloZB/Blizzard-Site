@@ -25,7 +25,17 @@ class Company extends CI_Controller{
 	}
 	
 	public function index(){
-	
+		$info['base_url'] = $this->site_url;
+		$info['css_path'] = $this->css_path;
+		$info['js_path'] = $this->js_path;
+		$info['images_path'] = $this->images_path;
+		$info['flash_path'] = $this->flash_path;
+		$info['content_path'] = $this->content_path;
+		$info['site_title'] = $this->config->item('site_title');
+		$info['landing_footer'] = false;
+		
+		$this->load->view('global/head', $info);
+		$this->load->view('global/footer', $info);
 	}
 	
 	public function press($section = ""){

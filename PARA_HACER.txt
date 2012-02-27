@@ -23,17 +23,6 @@
 |  ya que el error 404 ya está listo y con el 
 | representaré por ahora los errores de páginas 
 | faltantes.
-| -Terminar el sistema de noticias antes que 
-| cualquier cosa.
-| -Arreglar el bug que hace que las fechas salgan
-| repetidas en el sistema de noticias
-****************************************************
-| Drakantas
-****************************************************
-| Otros...
-| -------------------------------------------------
-| -Analizar que no haya errores en la implementación
-|  del diseño.
 ****************************************************
 | Copyright (C) 2012 FrozenTeam
 ****************************************************/

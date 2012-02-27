@@ -57,10 +57,39 @@
                                         Noticias actuales
 								</span></span></a>
 <?php
+//Nota inicial: Este comentario solo va en este archivo ...Vëase explicación al final de esta sección de código
+//Esta sección tiene una especie de "hack fix" por así decirlo...
+//Primeramente se crea un nuevo arreglo para las fechas($date) y un contador ($i)
+$date = array(); $i = 0;
+//Por cada parte de la información del arreglo $date_news, obtenemos su información por separado
 foreach($date_news as $item_date_news)
 {
- echo "<a href=\"".$base_url."news/date/".$item_date_news['month']."/".$item_date_news['year']."\">\n
-		<span class=\"titlecontents\"><span class=\"arc_title arc_news\">".date_digit_to_text($item_date_news['month'])." ".$item_date_news['year']."</span></span></a>\n";
+	//En el arreglo, incrementando la posición del mismo, vamos guardando los valores en el formato:
+	//Mes/Año - Ejemplo: Marzo/2012 -> Y así puede ser usada como parte de la URL sin necesidad de unir posteriormente la información
+	$date[$i] = $item_date_news['month']."/".$item_date_news['year'];
+	//Y vamos incrementando el contador de 1 en 1
+	$i++;
+}
+//Para eliminar fechas repetidas, usamos la función array_unique, que saca las repetidas, por ejemplo:
+//array([0] => "Marzo/2012", [1] => "Marzo/2012"); - Como veremos, está repetida, por lo que con esta función solo quedaría el arreglo:
+//array([0] => "Marzo/2012"); - El segundo valor fue eliminado, en base a la parte superior, se tomaría la comparación para ir eliminando
+$unique_date = array_unique($date);
+//El arreglo en el que se fue almacenando la información única, se llama $unique_date (arriba) y con el, la cantidad de valores que hay, se toma como límite del arreglo
+//Recordemos que los arreglos inician desde 0 (es decir, el 0 también cuenta)
+for($i = 0; $i < count($unique_date); $i++) //Y aquí también iniciamos otro contador...
+{
+	//Para imprimir la flecha "explotamos" el arreglo basándonos en la "/", Ejemplo:
+	//"Marzo/2012" -> Lo pasa a: array([0] => "Marzo", [1] => "2012");
+	//Así que en la posición 0 tendría el valor numérico del mes y en la posición 1 tendría el del año...
+	//De la siguiente forma: $print_date[0] = 01 <--Mes(Enero en este caso) | $print_date[1] = 2012 <--Año(2012 en este caso)
+	$print_date = explode("/", $unique_date[$i]);
+	//Imprimimos toda la información obtenida
+	echo "<a href=\"".$base_url."news/date/".$unique_date[$i]."\">\n".			//En esta sección convertimos los digitos del mes a texto con la función date_digit_to_text($digit);
+			"<span class=\"titlecontents\"><span class=\"arc_title arc_news\">".date_digit_to_text($print_date[0])." ".$print_date[1]."</span></span></a>\n";
+																														//E imprimimos adicional el año
+	//Explicación: Esta sección fue comentada ya que se quiere mostrar como estaría trabajando toda esta área del código ya que se buscará un mejor método
+	//en caso de que exista, ya que no es el más óptimo que siento que podría haber...
+	//Sin embargo, si no se encuentra otro método, se eliminarán estas líneas de código y se dejará tal y como está.
 }
 ?>
                 </div>
@@ -83,9 +112,9 @@ foreach($date_news as $item_date_news)
 						for($i = 0; $i < $total_news; $i++)
 						{
 							if($i == 0)
-								echo "<a class=\"selected\" href=\"".$base_url."/news/page/1\">".($i + 1)."</a>";
+								echo "<a class=\"selected\" href=\"".$base_url."news/page/1\">".($i + 1)."</a>";
 							else
-								echo "<a href=\"".$base_url."/news/page/1\">".($i + 1)."</a>";
+								echo "<a href=\"".$base_url."news/page/1\">".($i + 1)."</a>";
 						}
 					?>
 					</div>
